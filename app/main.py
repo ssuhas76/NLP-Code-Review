@@ -14,7 +14,8 @@ class code(BaseModel):
 
 app = FastAPI()
 
-@app.post('/review')
+
+@app.post('/')
 def get_code(code : code):
     def concat_reviews(my_string):
         review_list = my_string.splitlines()[0:10]
