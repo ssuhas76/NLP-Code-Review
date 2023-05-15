@@ -81,12 +81,12 @@ def get_code(code : code):
 
 
     cleaned_review = preprocess_text(code.codereview)
-    vectorizer = pickle.load(open('/code/app/tfidf.pkl','rb'))
+    vectorizer = pickle.load(open('tfidf.pkl','rb'))
 
     feature_vector_review = vectorizer.transform([cleaned_review])
     feature_vector_review.shape
 
-    model = pickle.load(open('/code/app/model.pkl','rb'))
+    model = pickle.load(open('model.pkl','rb'))
     predicted = model.predict(feature_vector_review)
 
     if predicted == 0 :
