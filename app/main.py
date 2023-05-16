@@ -91,8 +91,8 @@ def get_code(code : code):
 
     if predicted == 0 :
         print('Negative')
-        return "Negative"
+        return False
     else:
         print('Postive')
-        return 'Postive'
+        return True
 
