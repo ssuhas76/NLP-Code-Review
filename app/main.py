@@ -90,9 +90,9 @@ def get_code(code : code):
     predicted = model.predict(feature_vector_review)
 
     if predicted == 0 :
-        print('Code review is Negative')
-        return "Code review is Negative"
+        print('Negative')
+        return "Negative"
     else:
-        print('Code review is Postive')
-        return 'Code review is Postive'
+        print('Postive')
+        return 'Postive'
 
